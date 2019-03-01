@@ -1,0 +1,458 @@
+.navbar-default{
+  background-color: #28CE02;
+  box-shadow: 0 5px 5px rgba(55, 55, 55, 0.76);
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar-brand, .navbar-default .navbar-nav>li>a{
+  color: white !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  background-color: #FCFF0A;
+  color: #337AB7 !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #FCFF0A;
+    border-radius: 5px;
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  }
+
+.navbar-default .navbar-toggle{
+  border-color: white;
+}
+
+.navbar-toggle{
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #185181;
+}
+
+@font-face {
+  src: url('../fonts/DS-DIGIB.TTF');
+  font-family: digital;
+}
+
+#menu li{
+  border-right: 0.5px solid #296da7;
+}
+
+#menu li:last-child{
+  border: none;
+}
+
+/*-----------BERANDA------------------------*/
+
+#beranda{
+  background-image: url("../img/background1.jpeg");
+  background-repeat: no-repeat;
+  /*background-size: 1400px 800px;*/
+  background-size: cover;
+  min-height: 700px;
+  padding-top: 80px;
+  padding-right: 950px;
+}
+
+#beranda img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 7px solid white;
+}
+
+#beranda h2{
+  color: black;
+/*  -webkit-text-fill-color: white;  Will override color (regardless of order) 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;*/
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-family: inherit;
+}
+
+@media screen and (max-width:768px){
+  #beranda h3{
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+
+  #beranda h1{
+    font-size: 1.8em;
+  }
+}
+
+
+/*------------AKHIR BERANDA----------------------*/
+
+/*------------PORTOFOLIO-------------------------*/
+
+#portofolio{
+  min-height: 600px;
+
+}
+
+#portofolio h2{
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+}
+
+hr{
+  width: 40%;
+  border-top: 5px solid #337AB7;
+}
+
+.thumbnail{
+  border: 5px solid #337AB7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portofolio img{
+  height: 200px;
+  width: 100%;
+}
+
+.modal-header{
+  background-color: #337AB7;
+  color: white;
+}
+
+.port{
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -ms-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-duration: 0.55s;
+  -webkit-animation-duration: 0.55s;
+  -moz-animation-duration: 0.55s;
+  -ms-animation-duration: 0.55s;
+  -o-animation-duration: 0.55s;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -moz-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -ms-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+  -o-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+
+@keyframes bounce{
+  0% {
+    transform: translate-Y(0);
+  }
+  50% {
+    transform: translateY(-30px);*/
+  }
+  70% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes bounce{
+  0% {
+    -webkit-transform: translate-Y(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);*/
+  }
+  70% {
+    -webkit-transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+
+@-moz-keyframes bounce{
+  0% {
+    -moz-transform: translate-Y(0);
+  }
+  50% {
+    -moz-transform: translateY(-30px);*/
+  }
+  70% {
+    -moz-transform: translateY(0);
+  }
+  90% {
+    -moz-transform: translateY(-10px);
+  }
+}
+
+@-ms-keyframes bounce{
+  0% {
+    -ms-transform: translate-Y(0);
+  }
+  50% {
+    -ms-transform: translateY(-30px);*/
+  }
+  70% {
+    -ms-transform: translateY(0);
+  }
+  90% {
+    -ms-transform: translateY(-10px);
+  }
+}
+
+@-o-keyframes bounce{
+  0% {
+    -o-transform: translate-Y(0);
+  }
+  50% {
+    -o-transform: translateY(-30px);*/
+  }
+  70% {
+    -o-transform: translateY(0);
+  }
+  90% {
+    -o-transform: translateY(-10px);
+  }
+}
+
+/*---------------------------AKHIR PORTOFOLIO------------------------------*/
+
+
+/*---------------------------TENTANG------------------------------------------*/
+#tentang{
+  min-height: 600px;
+  background-color: #1d486e;
+  padding: 15px;
+  color: white;
+}
+
+#tentang h1{
+  color: white;
+}
+
+#tentang hr{
+  border-color: white;
+}
+
+#kontententang{
+  font-size: 1.3em;
+  text-indent: 70px;
+}
+
+/*-------------------AKHIR TENTANG-----------------------------------------*/
+
+/*-------------------------KONTAK-------------------------------------------*/
+#kontak{
+  min-height: 600px;
+  padding: 15px 0;
+  background-color: rgb(236, 240, 241);
+}
+
+#kontak h1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+
+}
+
+#kontak_img{
+  border: 3px solid #337AB7;
+}
+
+.validasi{
+  border: 3px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  #kontak_img{
+    margin-top: 15px;
+  }
+
+  #kirim{
+    margin-bottom: 5px;
+  }
+
+  hr{
+    width: 80%;
+  }
+
+  #kontententang{
+    font-size: 1em;
+    text-indent: 20px;
+  }
+}
+
+/*-----------------AKHIR KONTAK------------------------------------*/
+
+/*-----------------------FOOTER-------------------------------------*/
+footer{
+  color: white;
+  background-color: #28CE02;
+  box-shadow: 0 -3px 2px rgba(55, 55, 55, 0.76);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+};
+
+footer a:hover{
+  color: white;
+}
+
+footer ul li{
+  list-style: none;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li a{
+  color: #1d486e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer ul li a:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.hakcipta{
+  border-top: 1px solid white;
+}
+
+.informasi{
+  padding-left: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .informasi{
+    padding-left: 15px;
+  }
+}
+/*----------------------------END FOOTER--------------------------*/
+  .slideanim{
+    visibility:hidden;
+  }
+
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      -moz-animation-name: slide;
+      -o-animation-name: slide;
+      animation-duration: 1.75s;
+      -webkit-animation-duration: 1.75s;
+      -moz-animation-duration: 1.75s;
+      -o-animation-duration: 1.75s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  @-moz-keyframes slide {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -moz-transform: translateY(0%);
+    }
+  }
+
+  @-o-keyframes slide {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -o-transform: translateY(0%);
+    }
+  }
+
+  .muncul{
+    animation-name: muncul;
+    -webkit-animation-name: muncul;
+    -moz-animation-name: muncul;
+    -o-animation-name: muncul;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    visibility: visible;
+  }
+
+  @keyframes muncul {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes muncul {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes muncul {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes muncul {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+    #sensor{
+      /*padding: 10px 20px;*/
+      width: 160px;
+    }
+
+    @media screen and (max-width : 320px) {
+      #tombol2{
+        margin-top: -10px;
+      }
+
+      #portofolio{
+        margin-top: 3px;
+      }
+    }
